@@ -75,6 +75,18 @@ Marika Tamano, Alice Munro, Alisa Shevchenko, Pierre Boulet and Isabel Mendoza.
     - Caching?
     - Trip calculation (time and distance)
 
+
+#### Name: Suzanne Clandon
+- Occupation: Educator
+- Age: 28
+- Gender: Female
+- Skill Level: Avid traveler
+- Key Tasks:
+    - The local tip percentage
+    - Local shopping hours
+    - Safety 
+    - Is water safe?
+
 #### Name: Alice Munroe
 - Occupation: Student
 - Age: 24
