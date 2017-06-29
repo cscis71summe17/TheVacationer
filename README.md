@@ -129,7 +129,7 @@ The backlog was prioritized according to the core functionalities necessary for 
 
 **First sprint:** 13 points estimate 
 
-**Motivation** - we can pull couple of simple tasks and make a good progress on them + we can pull one big task. Also the infrastructure setup could be postponed.
+**Motivation** - We can pull couple of simple tasks and make a good progress on them and we can pull one big task. Also the infrastructure setup could be postponed.
 
 **Sprint goal**: Initial Skeleton of product with some basic functionality that can be available in DB/server, not necessarily dynamically from side APIs (reduce uncertainty + feasibility). 
 
@@ -190,3 +190,7 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 **Evidence of Pair Programming**
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint1/WhatsApp%20Image%202017-06-28%20at%2010.36.25%20PM.jpeg)
+
+**Sprint Burndown Chat**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint1/burndown.png)
