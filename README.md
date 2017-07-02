@@ -3,7 +3,7 @@
 ### Product Title: The Vacationer
 The Vacationer application allows users to lookup all sorts of different facts and information about a certain travel destination. The app also facilitates international communication by using the translation features.
 
-### Team Name: Group #2
+### Team Name: The Vacationers
 
 #### Members:
 - Arun Reddy Dhonthi Reddy (Product Owner/Dev)
