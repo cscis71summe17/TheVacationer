@@ -211,15 +211,15 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 # Project Part 3 of 4
 
-**First sprint:** 8 points estimate 
+**First sprint:** 6 points estimate 
 
-**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 8 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. The team has collectively discussed and agreed that 8 points will be fair enough to deliver in this sprint.
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 6 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. Basically it was an over estimate. The team has collectively discussed and agreed that 6 points will be fair enough to deliver in this sprint.
 
 **Sprint goal**: In this sprint we would like to display the details of the best rated restaurants for a given city and country combination. We would also like to achieve the  continuous integration and continuous development systems. 
 In this sprint we would like to achieve the below:
-* Display tips / gratuities
+
 * Display the list (names) of top 5 restaurants
-* Display the details(address and website) of top 5 restaurants.
+* Display the website of top 5 restaurants.
 
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
