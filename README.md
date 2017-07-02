@@ -206,3 +206,61 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 **Sprint Burndown Chat**
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint1/burndown.png)
+
+
+
+# Project Part 3 of 4
+
+**First sprint:** 8 points estimate 
+
+**Motivation** - Based on yesterday's weather forecasting pattern we have selected our sprint backlog. 
+
+**Sprint goal**: In this sprint we would like to display the details of the best rated restaurants for a given city and country combination. We would also like to achieve the  continuous integration and continuous development systems. 
+
+**Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
+
+**Daily Scrum**: Conducted on 2-Jul-2017 at 3 PM.
+
+* Scrum master initiated the daily scrum meeting. This meeting started at 3 and completed at 3:15.
+
+* All the team members have participated in the scrum meeting.
+
+* The updates from each team member is given below:-
+
+**Arun:** 
+* In the last 24 hours, worked on the sprint backlog items and read me. 
+* In the next 24 hours will be working on the read me.
+
+**Vas:**
+
+
+
+**Alex:** 
+
+
+
+
+**Peter:** 
+
+
+
+**Linh:** 
+
+
+**Grigory:** 
+
+
+**Impediment:**
+
+
+**Sprint Review with Stake Holder**
+
+We have conducted a sprint review with our stake holder Marica. She was happy to see the progress of our development.
+She reviewed the working software we developed so far and suggested to add the below items to product backlog:
+
+1. Pictures of the famours landmarks
+2. Mode of transportation to the landmarks from traveller's accomodation (hotel/lodge etc)
+3. Opening hours of the famous landmarks
+4. Admission Fee of the famous landmarks
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Sprint%20Review%20with%20Stake%20Holder.jpeg)
