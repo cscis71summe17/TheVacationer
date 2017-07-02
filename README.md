@@ -231,6 +231,8 @@ In this sprint we would like to achieve the below:
 
 **Impediments**
 
+Dining hall has been moved to another location and has become more difficult to work as a group. We have found a quite study area where we can eat and work together to resolve this issue.
+
 
 * The updates from each team member is given below:-
 
@@ -261,12 +263,12 @@ In this sprint we would like to achieve the below:
 * In the next 24 hours, will be working on sprint burndown chart and readme.
 
 
-**Sprint Review with Stake Holder**
+**Sprint Review with Stakeholder**
 
-We have conducted a sprint review with our stake holder Marica. She was happy to see the progress of our development.
+We have conducted a sprint review with our stakeholder Marica. She was happy to see the progress of our development.
 She reviewed the working software we developed so far and suggested to add the below items to product backlog:
 
-1. Pictures of the famours landmarks
+1. Pictures of the famous landmarks
 2. Mode of transportation to the landmarks from traveller's accomodation (hotel/lodge etc)
 3. Opening hours of the famous landmarks
 4. Admission Fee of the famous landmarks
