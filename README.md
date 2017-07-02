@@ -276,3 +276,16 @@ She reviewed the working software we developed so far and suggested to add the b
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/StakeHolder1.jpeg)
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/StakeHolder2.jpeg)
+
+**Mob Programming**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Mob%20Programming%201.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Mob%20Programming%202.jpeg)
+
+
+
+**Pair Programming**
+
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Pair%20Programming.jpeg)
