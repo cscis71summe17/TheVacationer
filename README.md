@@ -289,3 +289,8 @@ She reviewed the working software we developed so far and suggested to add the b
 
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Pair%20Programming.jpeg)
+
+
+**Sprint-2 Burndown Chart**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/sprint_2_-burndown_chart.jpg)
