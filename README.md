@@ -213,44 +213,52 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 **First sprint:** 8 points estimate 
 
-**Motivation** - Based on yesterday's weather forecasting pattern we have selected our sprint backlog. 
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 8 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. The team has collectively discussed and agreed that 8 points will be fair enough to deliver in this sprint.
 
 **Sprint goal**: In this sprint we would like to display the details of the best rated restaurants for a given city and country combination. We would also like to achieve the  continuous integration and continuous development systems. 
+In this sprint we would like to achieve the below:
+* Display tips / gratuities
+* Display the list (names) of top 5 restaurants
+* Display the details(address and website) of top 5 restaurants.
 
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
-**Daily Scrum**: Conducted on 2-Jul-2017 at 3 PM.
+**Daily Scrum**: Conducted on 2-Jul-2017 at 3:30 PM.
 
-* Scrum master initiated the daily scrum meeting. This meeting started at 3 and completed at 3:15.
+* Scrum master initiated the daily scrum meeting. This meeting started at 3:30 PM and completed at 3:45 PM.
 
 * All the team members have participated in the scrum meeting.
 
+**Impediments**
+
+
 * The updates from each team member is given below:-
-
-**Arun:** 
-* In the last 24 hours, worked on the sprint backlog items and read me. 
-* In the next 24 hours will be working on the read me.
-
-**Vas:**
-
 
 
 **Alex:** 
+* In the last 24 hours, worked on restaurants API and UI
+* In the next 24 hours, will be working on unit tests of the model.
+
+**Arun:** 
+* In the last 24 hours, worked on the sprint backlog items, demo to the stake holder and read me. 
+* In the next 24 hours will be working on the read me.
+
+**Grigory**
+* In the last 24 hours, worked on CI and CD. Completed CI.
+* In the next 24 hours, will be working on CD to run the application using tomcat.
+
+**Linh**
+* In the last 24 hours, did research on BDD
+* In the next 24 hours expecting to come up with few BDD tests
+
+**Peter:**
+* In the last 24 hours, worked on cucumber / BDD tests
+* In the next 24 hours, will be working on BDD tests for Tips / Gratuities.
 
 
-
-
-**Peter:** 
-
-
-
-**Linh:** 
-
-
-**Grigory:** 
-
-
-**Impediment:**
+**Vas**
+* In the last 24 hours, worked on refining the landmarks data
+* In the next 24 hours, will be working on sprint burndown chart and readme.
 
 
 **Sprint Review with Stake Holder**
@@ -263,4 +271,6 @@ She reviewed the working software we developed so far and suggested to add the b
 3. Opening hours of the famous landmarks
 4. Admission Fee of the famous landmarks
 
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/Sprint%20Review%20with%20Stake%20Holder.jpeg)
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/StakeHolder1.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/StakeHolder2.jpeg)
