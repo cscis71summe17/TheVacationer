@@ -211,7 +211,7 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 # Project Part 3 of 4
 
-**First sprint:** 7 points estimate 
+**Second sprint:** 7 points estimate 
 
 **Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. Basically it was an over estimate. The team has collectively discussed and agreed that 7 points will be fair enough to deliver in this sprint. All the selected user stories are less than half of the forecast velocity.
 
