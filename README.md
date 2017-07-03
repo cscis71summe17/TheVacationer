@@ -257,7 +257,7 @@ Dining hall has been moved to another location and has become more difficult to 
 
 **Peter:**
 * In the last 24 hours, worked on cucumber / BDD tests
-* In the next 24 hours, will be working on BDD for Restaurants integration. 
+* In the next 24 hours, will be working on BDD for Restaurants integration and Landmarks. 
 
 
 **Vas**
