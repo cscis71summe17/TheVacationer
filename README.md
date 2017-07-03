@@ -211,17 +211,14 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 # Project Part 3 of 4
 
-**First sprint:** 6 points estimate 
+**First sprint:** 7 points estimate 
 
-**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 6 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. Basically it was an over estimate. The team has collectively discussed and agreed that 6 points will be fair enough to deliver in this sprint.
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 6 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. Basically it was an over estimate. The team has collectively discussed and agreed that 7 points will be fair enough to deliver in this sprint. All the selected user stories are less than half of the forecast velocity.
 
 **Sprint goal**: 
-In this sprint we would like to achieve the below:
 
-* Display the list (names) of top 5 restaurants
-* Display the website URLs of top 5 restaurants.
-* Continuous Integration
-* Continuous Development
+Make restaurants information available to our customers
+
 
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
@@ -229,7 +226,7 @@ In this sprint we would like to achieve the below:
 
 * Scrum master initiated the daily scrum meeting. This meeting started at 3:00 PM and completed at 3:15 PM.
 
-* All the team members have participated in the scrum meeting.
+* All the team members and stake holder have participated in the scrum meeting.
 
 **Impediments**
 
@@ -256,7 +253,7 @@ Dining hall has been moved to another location and has become more difficult to 
 * In the next 24 hours expecting to come up with few BDD tests
 
 **Peter:**
-* In the last 24 hours, worked on cucumber / BDD tests
+* In the last 24 hours, worked on integrating cucumber and BDD tests
 * In the next 24 hours, will be working on BDD for Restaurants integration and Landmarks. 
 
 
@@ -267,8 +264,10 @@ Dining hall has been moved to another location and has become more difficult to 
 
 **Sprint Review with Stakeholder**
 
-We have conducted a sprint review with our stakeholder Marica. She was happy to see the progress of our development.
+We have conducted a sprint review with our stakeholder Marika. She was happy to see the progress of our development.
 She reviewed the working software we developed so far and suggested to add the below items to product backlog:
+
+In this Sprint, we could deliver 6 points i.e., names & websites of the restaurants. We couldnt deliver the Restaurant Address user story. It remains in the sprint backlog and we will work on it in the next sprint.
 
 1. Pictures of the famous landmarks
 2. Mode of transportation to the landmarks from traveller's accomodation (hotel/lodge etc)
@@ -295,4 +294,15 @@ She reviewed the working software we developed so far and suggested to add the b
 
 **Sprint-2 Burndown Chart**
 
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/sprint_2_-burndown_chart.jpg)
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/burndownS2.png)
+
+
+**CI and CD Screen Shots**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/ci_full.png)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/CI_test.png)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/cd_1.png)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/cd2.png)
