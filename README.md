@@ -215,17 +215,19 @@ https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 **Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 6 points. In our previous sprint, we have selected 13 points but we could deliver only 11 points with our team working quite a few extra hours till late night. Basically it was an over estimate. The team has collectively discussed and agreed that 6 points will be fair enough to deliver in this sprint.
 
-**Sprint goal**: In this sprint we would like to display the details of the best rated restaurants for a given city and country combination. We would also like to achieve the  continuous integration and continuous development systems. 
+**Sprint goal**: 
 In this sprint we would like to achieve the below:
 
 * Display the list (names) of top 5 restaurants
-* Display the website of top 5 restaurants.
+* Display the website URLs of top 5 restaurants.
+* Continuous Integration
+* Continuous Development
 
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
-**Daily Scrum**: Conducted on 2-Jul-2017 at 3:30 PM.
+**Daily Scrum**: Conducted on 2-Jul-2017 at 3:00 PM.
 
-* Scrum master initiated the daily scrum meeting. This meeting started at 3:30 PM and completed at 3:45 PM.
+* Scrum master initiated the daily scrum meeting. This meeting started at 3:00 PM and completed at 3:15 PM.
 
 * All the team members have participated in the scrum meeting.
 
@@ -238,8 +240,8 @@ Dining hall has been moved to another location and has become more difficult to 
 
 
 **Alex:** 
-* In the last 24 hours, worked on restaurants API and UI
-* In the next 24 hours, will be working on unit tests of the model.
+* In the last 24 hours, worked on updating API and UI using TDD
+* In the next 24 hours, will be re-writing the unit tests of the model.
 
 **Arun:** 
 * In the last 24 hours, worked on the sprint backlog items, demo to the stake holder and read me. 
@@ -255,7 +257,7 @@ Dining hall has been moved to another location and has become more difficult to 
 
 **Peter:**
 * In the last 24 hours, worked on cucumber / BDD tests
-* In the next 24 hours, will be working on BDD tests for Tips / Gratuities.
+* In the next 24 hours, will be working on BDD for Restaurants integration. 
 
 
 **Vas**
