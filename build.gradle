@@ -1,0 +1,88 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+jar {
+    baseName = 'TheVacationerProjectJar'
+    version =  '0.1.0'
+}
+
+war {
+    baseName = 'vacationer'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+bootRun {
+    addResources = true
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
+
+dependencies {
+    compile('com.google.code.gson:gson:2.3.1')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile('org.xerial:sqlite-jdbc:3.7.2')
+    compile('org.apache.tomcat.embed:tomcat-embed-el:8.0.28')
+    compile('org.apache.tomcat.embed:tomcat-embed-core:8.5.14')
+    testCompile('org.apache.tomcat.embed:tomcat-embed-el:8.0.28')
+    testCompile('org.apache.tomcat.embed:tomcat-embed-core:8.5.14')
+    providedRuntime('org.apache.tomcat.embed:tomcat-embed-core:8.5.14')
+    providedRuntime('org.apache.tomcat.embed:tomcat-embed-el:8.0.28')
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.3.RELEASE'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.3.RELEASE'
+    providedRuntime group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.3.RELEASE'
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('com.jayway.jsonpath:json-path')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.thymeleaf:thymeleaf-spring4")
+    compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+    testCompile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+    compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
+    testCompile 'info.cukes:cucumber-java:1.2.5'
+    testCompile 'info.cukes:cucumber-junit:1.2.5'
+    testCompile 'junit:junit:4.12'
+
+}
+
+task cucumber() {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'theVacationer', 'src/test/java/theVacationer']
+        }
+    }
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
