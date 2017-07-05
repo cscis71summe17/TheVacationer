@@ -55,7 +55,7 @@ We identified several stakeholders types. Most popular type is traveler, who sim
 
 #### Stakeholders:
 
-Marika Tamano, Alice Munro, Alisa Shevchenko, Pierre Boulet and Isabel Mendoza.
+Marika Tamano, Suzanne Clandon, Alice Munro, Alisa Shevchenko, Pierre Boulet and Isabel Mendoza.
 
 
 ### User personas
