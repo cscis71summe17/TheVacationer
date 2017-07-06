@@ -316,7 +316,7 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 **Third sprint:** 7 points estimate
 
 
-**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and delivered 6 story points. This amount of work was perfect amount for team and didnt make the development team overwhelmed to accomplish the all the items in the sprint backlog. As team we are confident that we can accomplish 7 story points in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and delivered 6 story points. This amount of work was a great amount for the development team and didn't overwhelm them to accomplish the all the items in the sprint backlog. As a team, we are confident that we can accomplish 7 story points in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
 
 **Weather Pattern Forecast** https://github.com/cscis71summe17/TheVacationer/blob/master/Sprint3/WeatherPatternVacationers%20sprint%203.xlsx
 
@@ -335,7 +335,7 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 
 **Impediments**
 
-For Sprint 3, one of developer's birthday falls on July 4th and the festivites of independece day, which will cause some distractions for our team. We will work till late in the afternoon and than later celebrate our team members birthday and watch the fireworks to ensure our team is in high moral. This small break will allow us to be more productive for the duration of the sprint. 
+For Sprint 3, one of our developer's birthday falls on July 4th and the festivites of independece day, which will cause some distractions for our team. We will work until late in the afternoon and than later celebrate our team members birthday and watch the fireworks to ensure our team is in high moral. This small break will allow us to be more productive for the duration of the sprint. 
 
 
 **Alex:** 
