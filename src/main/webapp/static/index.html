@@ -34,6 +34,14 @@
         {"id":"5","name":"Hasir Restaurant","url":"http://www.hasir.de/","address":"Meow"}
         ];
 
+    var hotels = [
+        {"id":"1","name":"AMPELMANN Hotel","url":"http://www.ampelmann.de","address":"Meow"},
+        {"id":"2","name":"Hotel Sphere","url":"http://www.tv-turm.de/en/restaurant.php","address":"Meow"},
+        {"id":"3","name":"Hotel HEat","url":"http://www.radisson.com","address":"Meow"},
+        {"id":"4","name":"DINEA Hotel","url":"https://www.dinea.de/berlin-alex/","address":"Meow"},
+        {"id":"5","name":"Hasir Hotel","url":"http://www.hasir.de/","address":"Meow"}
+    ];
+
     webix.ui({
         rows: [
             {
@@ -146,6 +154,23 @@
                                         data: restaurants
                                     }
                                 ]
+                            },
+                            {width: 30},
+                            {
+                                rows: [
+
+                                    {template: "Hotels", type: "header"}
+                                    ,
+                                    {
+                                        view: "list",
+                                        width: 250,
+                                        id: "hotelsid",
+                                        height: 200,
+                                        template: "#name#",
+                                        select: true,
+                                        data: hotels
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -234,6 +259,13 @@
                 $$('restaurantsid').define('data', restaurants);
                 $$('restaurantsid').refresh();
             });
+
+            webix.ajax("../hotels?city="+city+"&country="+country,function (text) {
+                var parsed2 = JSON.parse(text);
+                hotels = parsed2;
+                $$('hotelsid').define('data', hotels);
+                $$('hotelsid').refresh();
+            });
         }
     });
 
@@ -250,17 +282,32 @@
     $$("restaurantsid").attachEvent("onItemClick", function (id, e, node) {
         var item = this.getItem(id);
         var description;
-        var adr =restaurants[id-1].address.toString();
-        var email = restaurants[id-1].url.toString();
-        if(email == null){
-            email = "No web address on file";
-        }
-            description = "Address: "+adr+
-                "<br>"+ "<a href=\""+email+
-            "\">"+email+"</a>";
+        var adr = restaurants[id - 1].address.toString();
+        var email = restaurants[id - 1].url.toString();
+        description = "Address: " + adr +
+                "<br>" + "<a href=\"" + email +
+                "\">" + email + "</a>";
 
         webix.modalbox({
             title: restaurants[id - 1].name.toString(),
+            buttons: ["Ok"],
+            width: "500px",
+            text: description
+    });
+    });
+
+    $$("hotelsid").attachEvent("onItemClick", function (id, e, node) {
+        var item = this.getItem(id);
+        var description;
+        var adr = hotels[id - 1].address.toString();
+        var email = hotels[id - 1].url.toString();
+        description = "Address: " + adr +
+            "<br>" + "<a href=\"" + email +
+            "\">" + email + "</a>";
+
+
+        webix.modalbox({
+            title: hotels[id - 1].name.toString(),
             buttons: ["Ok"],
             width: "500px",
             text: description
