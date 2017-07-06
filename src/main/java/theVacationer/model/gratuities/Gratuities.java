@@ -23,7 +23,7 @@ public class Gratuities extends Model {
             ResultSet results = query(country);
             int currentId = 1;
             while (results.next()) {
-                GratuityNumbers info = new GratuityNumbers(results.getString(1), currentId);
+                GratuityNumbers info = new GratuityNumbers(results.getString(2), currentId);
                 numbers.add(info);
                 currentId++;
             }
@@ -41,7 +41,7 @@ public class Gratuities extends Model {
     @Override
     public ResultSet query(String country) throws Exception {
         String str =
-                "SELECT A.rate " +
+                "SELECT A.id, A.rate " +
                         "FROM  " + GRATUITIES_TABLE + " AS A, " + COUNTRY_TABLE + " AS B " +
                         "WHERE A.country_id = B.id AND B.name LIKE '" + country + "';";
         System.out.println(str);

@@ -4,10 +4,10 @@ package theVacationer.model.gratuities;
  */
 public class GratuityNumbers {
     int id;
-    String number;
+    int rate;
 
     public GratuityNumbers(String number,int id) {
-        this.number = number;
+        this.rate = Integer.parseInt(number);
         this.id = id;
     }
 
@@ -19,12 +19,12 @@ public class GratuityNumbers {
         this.id = id;
     }
 
-    public String getNumber() {
-        return number;
+    public int getRate() {
+        return rate;
     }
 
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setRate(int number) {
+        this.rate = number;
     }
 }

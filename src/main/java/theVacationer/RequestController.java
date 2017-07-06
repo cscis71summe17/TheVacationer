@@ -82,14 +82,13 @@ public class RequestController {
     }
     @RequestMapping("/gratuities")
     public List<GratuityNumbers> getGratuityInfo(@RequestParam(value="country")String country) throws Exception {
-        /*System.out.println("YES IT CAME");
+        System.out.println("YES IT CAME");
         Connection con = null;
         con = Model.getConnection();
         List<GratuityNumbers> sf = new Gratuities(country, con.createStatement()).getNumbers();
         if(con != null)
             con.close();
-        return sf;*/
-        return null;
+        return sf;
     }
 
     @RequestMapping("/reataurants")
@@ -135,10 +134,6 @@ public class RequestController {
         FourSquareApiResponse fourSquareApiResponse = new FourSquareApiResponse(country, city, api);
         fourSquareApiResponse.queryApi();
         return fourSquareApiResponse.getResponse().getVenues();
-    }
-    @RequestMapping("/gratuities")
-    public List<Integer> getGratuities(@RequestParam(value="country")String country) throws Exception {
-        return new ArrayList<>();
     }
 }
 
