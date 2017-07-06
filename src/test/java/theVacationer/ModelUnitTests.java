@@ -18,6 +18,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import theVacationer.model.Model;
 import theVacationer.model.geodata.Cities;
 import theVacationer.model.geodata.Countries;
+import theVacationer.model.gratuities.Gratuities;
 import theVacationer.model.safetyInfo.SafetyInfo;
 import theVacationer.model.Header;
 import theVacationer.model.landmarks.Landmark;
@@ -587,6 +588,49 @@ public class ModelUnitTests {
 
             verify(rs, times(1)).getString(1);
             verify(rs, times(1)).getString(2);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    @Test
+    public void gratuitiesTestIndexVerification() {
+        try {
+            String country = FRANCE;
+            String city = PARIS;
+            Statement s = mock(Statement.class);
+            ResultSet rs = mock(ResultSet.class);
+
+
+            when(s.executeQuery(anyString())).thenReturn(rs);
+            when(rs.next()).thenReturn(true).thenReturn(false);
+
+            Gratuities ct = new Gratuities(country, s);
+
+            verify(rs, times(1)).getString(2);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void gratuitiesTestQueryVerification() {
+        try {
+            String stringSample = FRANCE;
+            Statement s = mock(Statement.class);
+            ResultSet rs = mock(ResultSet.class);
+            when(s.executeQuery(anyString())).thenReturn(rs);
+            when(rs.next()).thenReturn(true).thenReturn(false);
+
+            String str =
+                    "SELECT A.id, A.rate " +
+                            "FROM  " + "Gratuities" + " AS A, " + COUNTRY_TABLE + " AS B " +
+                            "WHERE A.country_id = B.id AND B.name LIKE '" + stringSample + "';";
+
+            Gratuities ct = new Gratuities(stringSample, s);
+
+            verify(s, times(1)).executeQuery(str);
 
         } catch (SQLException e) {
             e.printStackTrace();

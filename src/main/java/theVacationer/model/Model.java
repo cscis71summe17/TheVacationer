@@ -16,9 +16,7 @@ public abstract class Model {
   public final String SAFETYINFO_TABLE = "SafetyInfo";
   public final String GRATUITIES_TABLE = "Gratuities";
   public final String CITY_TABLE = "City";
-  //public final String FILE_PATH = "src/main/resources/vacationer.sqlite";
 
-  //  public final String FILE_PATH = Model.class.getClassLoader().getResource( "vacationer.sqlite").getPath();
   public abstract ResultSet query(String query) throws Exception;
 
   public static Connection getConnection() throws ClassNotFoundException, SQLException {
