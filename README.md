@@ -316,7 +316,7 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 **Third sprint:** 7 points estimate
 
 
-**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and our estimate was accurate to what our team can deliver. This amount of work was perfect amount for team and didnt make the development team overwhelmed to accomplish the all the items in the sprint backlog. As team we are confident that we can accomplish 7 story points again in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and delivered 6 story points. This amount of work was perfect amount for team and didnt make the development team overwhelmed to accomplish the all the items in the sprint backlog. As team we are confident that we can accomplish 7 story points in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
 
 
 
