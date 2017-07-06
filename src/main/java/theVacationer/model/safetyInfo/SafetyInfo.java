@@ -42,7 +42,7 @@ public class SafetyInfo extends Model {
     public ResultSet query(String country) throws Exception {
         String str =
                 "SELECT A.number, A.description " +
-                        "FROM  " + SAFETYINFO_TABLE + " AS A, " + COUNTRY_TABLE + " AS B, " +
+                        "FROM  " + SAFETYINFO_TABLE + " AS A, " + COUNTRY_TABLE + " AS B " +
                         "WHERE A.country_id = B.id AND B.name LIKE '" + country + "';";
         return statement.executeQuery(str);
     }
