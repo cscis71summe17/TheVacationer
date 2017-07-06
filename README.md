@@ -308,3 +308,122 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/cd_1.png)
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint2/cd2.png)
+
+
+# Project Part 4 of 4
+
+
+**Third sprint:** 7 points estimate
+
+
+**Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and our estimate was accurate to what our team can deliver. This amount of work was perfect amount for team and didnt make the development team overwhelmed to accomplish the all the items in the sprint backlog. As team we are confident that we can accomplish 7 story points again in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
+
+
+
+**Weather Pattern Forecast** https://github.com/cscis71summe17/TheVacationer/blob/master/Sprint3/WeatherPatternVacationers%20sprint%203.xlsx
+
+
+
+
+**Daily Scrum**: Conducted on 5-Jul-2017 at 3:00 PM.
+
+* Scrum master initiated the daily scrum meeting. This meeting started at 3:00 PM and completed at 3:15 PM.
+
+* All the team members and stake holder have participated in the scrum meeting.
+
+
+
+**Impediments**
+
+For Sprint 3, one of developer's birthday falls on July 4th and the festivites of independece day, which will cause some distractions for our team. We will work in the morning and than later celebrate our team members birthday and watch the fireworks to ensure our team is in high moral. This small break will allow us to be more productive for the duration of the sprint. 
+
+
+
+
+
+**Alex:** 
+* In the last 24 hours, reviewing unit tests
+* In the next 24 hours, implementing the Hotel API using BDD 
+
+**Arun:** 
+* In the last 24 hours, worked on the sprint backlog items 
+* In the next 24 hours will be working on the power point presentations to give to stakeholders 
+
+**Grigory**
+* In the last 24 hours, worked on CI and CD. Completed CI.
+* In the next 24 hours Create necessary classes to decouple Restaurants requests logic (use TDD)
+
+
+**Linh**
+* In the last 24 hours, did research on the BDD tests on how to properly implement them.
+* In the next 24 hours complete research and help memeber of the team working on BDD tests 
+
+**Peter:**
+* In the last 24 hours, Worked on BDD with Cucumber
+* In the next 24 hours, will continue working on BDD tests. 
+
+
+**Vas**
+* In the last 24 hours, pair programmed in order to develop BDD 
+* In the next 24 hours, will be working on sprint burndown chart and readme.
+
+
+
+
+**Sprint Review with Stakeholder Rehearsal**
+
+
+
+Our Sprint Review went well with our Stakeholder, Marika. She is again happy to see the progress of our product. After our presentation, she was impressed to see the new features regarding restaurants and hotel information. Marika would like to add additional features to the website, so that it would display local tourist information. She also wanted to rearrange our product backlog, so nearby hotspots, pictures of famous landmarks, information on mode on transportation to the famous landmarks, opening hours of the famous landmarks, Admission fee to landmarks, and finally maps that would show the region of interest. 
+
+
+In this Sprint, we could deliver 7 points, the total amount that we estimated for this third Sprint. We were able to add Restaurants Addresses, Names of the hotel as well as their respective addresses, and finally added gratuities 
+	
+
+In the next Sprint, we will on the following features;  
+
+
+1. Nearby WiFi spots
+2. Pictures of landmarks 
+3. Mode of transportation to the famous landmarks 
+4. Opening hours of the famous landmarks 
+
+
+
+
+**Rehersal Sprint Review with our Stakeholder**
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder1.jpeg)
+
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder2.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder3.jpeg)
+
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder4.jpeg)
+
+
+
+
+
+
+
+
+
+**Pair-Programming**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair2.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair1.jpeg)
+
+
+
+
+
+
+
+**Mob-Programming**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob2.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob1.jpeg)
