@@ -367,6 +367,27 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 
 
 
+
+
+**Pair-Programming**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair2.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair1.jpeg)
+
+
+
+
+**Mob-Programming**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob2.jpeg)
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob1.jpeg)
+
+
+
+**Sprint Burn Down Chart**: https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/burn3.png
+
 **Sprint Review with Stakeholder Rehearsal**
 
 
@@ -389,6 +410,7 @@ In the next Sprint, we will on the following features;
 
 
 **Rehersal Sprint Review with our Stakeholder**
+
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder1.jpeg)
 
 
@@ -398,25 +420,3 @@ In the next Sprint, we will on the following features;
 
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder4.jpeg)
-
-
-
-
-**Pair-Programming**
-
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair2.jpeg)
-
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair1.jpeg)
-
-
-
-
-**Mob-Programming**
-
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob2.jpeg)
-
-![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob1.jpeg)
-
-
-
-**Sprint Burn Down Chart**: https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/burn3.png
