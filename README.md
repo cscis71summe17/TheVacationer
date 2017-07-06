@@ -13,8 +13,6 @@ The Vacationer application allows users to lookup all sorts of different facts a
 - Alexander Dmitryukov (Dev)
 - Linh Truong (Dev)
 
-### Backend Repo: https://github.com/cscis71summe17/TheVacationerBackend
-
 ### Git: https://github.com/cscis71summe17/TheVacationer
 
 ### Trello: https://trello.com/b/xn8Hnj4p/the-vacationer-project
