@@ -12,6 +12,8 @@ import org.springframework.web.client.RestTemplate;
 import theVacationer.model.ApiConnector;
 import theVacationer.model.Model;
 import theVacationer.model.geodata.*;
+import theVacationer.model.gratuities.Gratuities;
+import theVacationer.model.gratuities.GratuityNumbers;
 import theVacationer.model.landmarks.Landmarks;
 import theVacationer.model.landmarks.Places;
 import theVacationer.model.FourSquareApiResponse;
@@ -78,6 +80,15 @@ public class RequestController {
             con.close();
         return sf;
     }
+    @RequestMapping("/gratuities")
+    public List<GratuityNumbers> getGratuityInfo(@RequestParam(value="country")String country) throws Exception {
+        Connection con = null;
+        con = Model.getConnection();
+        List<GratuityNumbers> sf = new Gratuities(country, con.createStatement()).getNumbers();
+        if(con != null)
+            con.close();
+        return sf;
+    }
 
     @RequestMapping("/reataurants")
     public List<Venue> getRestaurants(@RequestParam(value="city") String city,
@@ -122,10 +133,6 @@ public class RequestController {
         FourSquareApiResponse fourSquareApiResponse = new FourSquareApiResponse(country, city, api);
         fourSquareApiResponse.queryApi();
         return fourSquareApiResponse.getResponse().getVenues();
-    }
-    @RequestMapping("/gratuities")
-    public List<Integer> getGratuities(@RequestParam(value="country")String country) throws Exception {
-        return new ArrayList<>();
     }
 }
 

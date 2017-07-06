@@ -14,6 +14,7 @@ public abstract class Model {
   public static final String POSTGRES_VACATION = "vacation";
   public final String COUNTRY_TABLE = "Country";
   public final String SAFETYINFO_TABLE = "SafetyInfo";
+  public final String GRATUITIES_TABLE = "Gratuities";
   public final String CITY_TABLE = "City";
   //public final String FILE_PATH = "src/main/resources/vacationer.sqlite";
 
