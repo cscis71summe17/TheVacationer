@@ -637,4 +637,51 @@ public class ModelUnitTests {
         }
     }
 
+    @Test
+    public void gratuitiesDataParsingVerification() {
+        try {
+            String stringSample = FRANCE;
+            Statement s = mock(Statement.class);
+            ResultSet rs = mock(ResultSet.class);
+
+            when(s.executeQuery(anyString())).thenReturn(rs);
+
+            when(rs.getString(2))
+                    .thenReturn("15");
+
+            when(rs.next()).thenReturn(true)
+                    .thenReturn(false);
+
+            Gratuities ct = new Gratuities(stringSample, s);
+            assertEquals(1, ct.getNumbers().get(0).getId());
+            assertEquals(15, ct.getNumbers().get(0).getRate());
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Check if no exception is thrown on faulty input
+     */
+    @Test
+    public void gratuitiesDataParsingFailedVerification() throws SQLException {
+        String stringSample = FRANCE;
+        String failedInput = "asd";
+        Statement s = mock(Statement.class);
+        ResultSet rs = mock(ResultSet.class);
+
+        when(s.executeQuery(anyString())).thenReturn(rs);
+
+        when(rs.getString(2))
+                    .thenReturn(failedInput);
+
+        when(rs.next()).thenReturn(true)
+                .thenReturn(false);
+
+        Gratuities ct = new Gratuities(stringSample, s);
+        verify(rs, times(1)).getString(2);
+        assertEquals(0, ct.getNumbers().size());
+    }
+
 }

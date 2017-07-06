@@ -116,8 +116,6 @@ public class RequestController {
     @RequestMapping("/hotels")
     public List<Venue> getHotels(@RequestParam(value="city") String city,
                                       @RequestParam(value="country")String country) throws Exception {
-        Connection con = null;
-        RestTemplate response = new RestTemplate();
 
         String baseUrl = "https://api.foursquare.com/v2/venues/search";
         ApiConnector api = new ApiConnector(baseUrl);

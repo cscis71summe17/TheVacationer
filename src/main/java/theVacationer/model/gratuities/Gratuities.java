@@ -44,7 +44,6 @@ public class Gratuities extends Model {
                 "SELECT A.id, A.rate " +
                         "FROM  " + GRATUITIES_TABLE + " AS A, " + COUNTRY_TABLE + " AS B " +
                         "WHERE A.country_id = B.id AND B.name LIKE '" + country + "';";
-        System.out.println(str);
         return statement.executeQuery(str);
     }
 
