@@ -318,12 +318,11 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 
 **Motivation** - Based on yesterday's weather forecasting pattern, we have selected our sprint backlog of 7 points. In our previous sprint, we calculated 7 story points and delivered 6 story points. This amount of work was perfect amount for team and didnt make the development team overwhelmed to accomplish the all the items in the sprint backlog. As team we are confident that we can accomplish 7 story points in this sprint. All items in the sprint backlog are less than hald the forecast velocity. 
 
-**Motivation** - Make hotel information available for our customers
-
-**Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
-
 **Weather Pattern Forecast** https://github.com/cscis71summe17/TheVacationer/blob/master/Sprint3/WeatherPatternVacationers%20sprint%203.xlsx
 
+**Sprint Goal** - Make hotel information available for our customers
+
+**Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 
 
