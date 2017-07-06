@@ -347,7 +347,7 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 * In the next 24 hours will be working on the power point presentations to give to stakeholders 
 
 **Grigory**
-* In the last 24 hours, worked on CI and CD. Completed CI.
+* In the last 24 hours, worked on CI and CD. Completed both CI and CD.
 * In the next 24 hours Create necessary classes to decouple Restaurants requests logic (use TDD)
 
 
