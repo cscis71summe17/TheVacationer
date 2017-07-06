@@ -1,6 +1,7 @@
 
 package theVacationer.model.restaurants;
 
+import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
@@ -11,19 +12,21 @@ public class Venue {
     /*
     @SerializedName("categories")
     private List<Category> mCategories;
+    */
     @SerializedName("location")
     private Location mLocation;
-    */
+
     @SerializedName("name")
     private String mName;
     @SerializedName("url")
     private String mUrl;
 
+    private String address;
+
     @SerializedName("id")
     public String id;
 
     public Venue() {
-
     }
 
 
@@ -37,11 +40,24 @@ public class Venue {
     public Location getLocation() {
         return mLocation;
     }
-
+*/
     public void setLocation(Location location) {
         mLocation = location;
+        System.out.println(location.getAddress().toString());
+        setAddress(mLocation.getAddress()+", "+
+                mLocation.getCity()+", "+
+                mLocation.getCountry()+" "+
+                mLocation.getPostalCode() );
     }
-    */
+
+    public void setAddress(String address) {
+        this.address = address;
+        System.out.println(address);
+    }
+
+    public String getAddress() {
+        return address;
+    }
 
     public String getName() {
         return mName;
