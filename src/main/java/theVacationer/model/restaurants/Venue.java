@@ -43,7 +43,6 @@ public class Venue {
 */
     public void setLocation(Location location) {
         mLocation = location;
-        System.out.println(location.getAddress().toString());
         setAddress(mLocation.getAddress()+", "+
                 mLocation.getCity()+", "+
                 mLocation.getCountry()+" "+
