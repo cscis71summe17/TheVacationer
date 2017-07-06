@@ -2,10 +2,7 @@ package theVacationer;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
@@ -13,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import theVacationer.model.ApiConnector;
 import theVacationer.model.Model;
 import theVacationer.model.geodata.*;
 import theVacationer.model.landmarks.Landmark;
@@ -91,10 +89,22 @@ public class RequestController {
                                    @RequestParam(value="country")String country) throws Exception {
         Connection con = null;
         RestTemplate response = new RestTemplate();
-        Restaurants restaurants = new Restaurants();
-        restaurants = response.getForObject("https://api.foursquare.com/v2/venues/search?query=restaurant&limit=5&v=20170701&client_id=ZWDQ4TMCCPQD4EGPFXUU0B1S0A1ESD5ATWDAGSIQQ0MHIYQ5&client_secret=VTCW04XIPQYL3MWMNSLX3ZIIFGZXIY5IGOXGK35PJGXON1M1&near="+city+","+country,
-                Restaurants.class);
-        System.out.println(response.toString());
+
+
+
+        String baseUrl = "https://api.foursquare.com/v2/venues/search";
+        ApiConnector api = new ApiConnector(baseUrl);
+        Map<String,String> paramMap = new TreeMap<String, String>();
+        paramMap.put("query", "restaurant");
+        paramMap.put("limit", "5");
+        paramMap.put("v", "20170701");
+        paramMap.put("client_id", "ZWDQ4TMCCPQD4EGPFXUU0B1S0A1ESD5ATWDAGSIQQ0MHIYQ5");
+        paramMap.put("client_secret", "VTCW04XIPQYL3MWMNSLX3ZIIFGZXIY5IGOXGK35PJGXON1M1");
+        paramMap.put("near", city+","+country);
+        api.setParams(paramMap);
+        
+        Restaurants restaurants = new Restaurants(country, city, api);
+        restaurants.queryApi();
         return restaurants.getResponse().getVenues();
     }
 
