@@ -19,6 +19,7 @@ import theVacationer.model.Model;
 import theVacationer.model.geodata.Cities;
 import theVacationer.model.geodata.Countries;
 import theVacationer.model.gratuities.Gratuities;
+import theVacationer.model.gratuities.GratuityNumbers;
 import theVacationer.model.safetyInfo.SafetyInfo;
 import theVacationer.model.Header;
 import theVacationer.model.landmarks.Landmark;
@@ -683,5 +684,17 @@ public class ModelUnitTests {
         verify(rs, times(1)).getString(2);
         assertEquals(0, ct.getNumbers().size());
     }
+
+    @Test
+    public void gratuitiesNumberDataParsing() throws SQLException {
+        String expectedRate = "15";
+        int expectedRateInt = 15;
+        int expectedId = 1;
+        GratuityNumbers number = new GratuityNumbers(expectedRate, expectedId);
+        assertEquals(expectedRateInt, number.getRate());
+        assertEquals(expectedId, number.getId());
+    }
+
+
 
 }
