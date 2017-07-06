@@ -414,7 +414,7 @@ Our development team has demonstrated the product increment. Every backlog item 
 
 She was again happy to see the progress of our product. After our presentation, she was impressed to see the new features regarding restaurants and hotel information. 
 
-Product Owner thanked Marika for attending the sprint review. He explained the purpose of the sprint review and requested her feedback.
+Product Owner thanked Marika for attending the sprint review. Product owner also thanked all scrum team members, as he is extremely grateful for their hard work. He explained the purpose of the sprint review and requested her feedback.
 
 Marika would like to add additional features to the website, so that it would display local tourist information. She also wanted to rearrange our product backlog, so nearby hotspots, pictures of famous landmarks, information on mode of transportation to the famous landmarks, opening hours of the famous landmarks, Admission fee to landmarks, and finally maps that would show the region of interest. 
 
