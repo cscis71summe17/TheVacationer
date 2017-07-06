@@ -27,11 +27,11 @@
 
     var safetyInfo = [{"id":1,"number":"112","description":"All Services"},{"id":2,"number":"17","description":"Police"},{"id":3,"number":"15","description":"Medical Help"}];
     var restaurants = [
-        {"id":"1","name":"AMPELMANN Restaurant","url":"http://www.ampelmann.de"},
-        {"id":"2","name":"Restaurant Sphere","url":"http://www.tv-turm.de/en/restaurant.php"},
-        {"id":"3","name":"Restaurant HEat","url":"http://www.radisson.com"},
-        {"id":"4","name":"DINEA Restaurant","url":"https://www.dinea.de/berlin-alex/"},
-        {"id":"5","name":"Hasir Restaurant","url":"http://www.hasir.de/"}
+        {"id":"1","name":"AMPELMANN Restaurant","url":"http://www.ampelmann.de","address":"Meow"},
+        {"id":"2","name":"Restaurant Sphere","url":"http://www.tv-turm.de/en/restaurant.php","address":"Meow"},
+        {"id":"3","name":"Restaurant HEat","url":"http://www.radisson.com","address":"Meow"},
+        {"id":"4","name":"DINEA Restaurant","url":"https://www.dinea.de/berlin-alex/","address":"Meow"},
+        {"id":"5","name":"Hasir Restaurant","url":"http://www.hasir.de/","address":"Meow"}
         ];
 
     webix.ui({
@@ -250,11 +250,15 @@
     $$("restaurantsid").attachEvent("onItemClick", function (id, e, node) {
         var item = this.getItem(id);
         var description;
-        if(restaurants[id-1].url != null){
-            description = restaurants[id-1].url.toString();
-        } else {
-            description = "No web address on file";
+        var adr =restaurants[id-1].address.toString();
+        var email = restaurants[id-1].url.toString();
+        if(email == null){
+            email = "No web address on file";
         }
+            description = "Address: "+adr+
+                "<br>"+ "<a href=\""+email+
+            "\">"+email+"</a>";
+
         webix.modalbox({
             title: restaurants[id - 1].name.toString(),
             buttons: ["Ok"],
