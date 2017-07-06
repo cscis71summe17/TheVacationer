@@ -82,7 +82,6 @@ public class RequestController {
     }
     @RequestMapping("/gratuities")
     public List<GratuityNumbers> getGratuityInfo(@RequestParam(value="country")String country) throws Exception {
-        System.out.println("YES IT CAME");
         Connection con = null;
         con = Model.getConnection();
         List<GratuityNumbers> sf = new Gratuities(country, con.createStatement()).getNumbers();
