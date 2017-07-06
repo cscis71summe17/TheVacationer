@@ -386,7 +386,11 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 
 
 
-**Sprint Burn Down Chart**: https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/burn3.png
+**Sprint Burn Down Chart**: 
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/burn3.png)
+
+
 
 **Sprint Review with Stakeholder Rehearsal**
 
