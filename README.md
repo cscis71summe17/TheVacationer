@@ -325,7 +325,6 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 
-
 **Daily Scrum**: Conducted on 5-Jul-2017 at 3:00 PM.
 
 * Scrum master initiated the daily scrum meeting. This meeting started at 3:00 PM and completed at 3:15 PM.
@@ -361,7 +360,7 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 
 **Peter:**
 * In the last 24 hours, Worked on BDD with Cucumber
-* In the next 24 hours, will continue working on BDD tests. 
+* In the next 24 hours, will continue working on BDD tests & DB element of gratuities. 
 
 
 **Vas**
@@ -406,11 +405,6 @@ In the next Sprint, we will on the following features;
 
 
 
-
-
-
-
-
 **Pair-Programming**
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Pair2.jpeg)
@@ -420,11 +414,12 @@ In the next Sprint, we will on the following features;
 
 
 
-
-
-
 **Mob-Programming**
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob2.jpeg)
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Mob1.jpeg)
+
+
+
+**Sprint Burn Down Chart**: https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/burn3.png
