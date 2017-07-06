@@ -55,3 +55,8 @@ Feature: Should be possible to receive various destinations per country/city
       |   Milan    |    Italy      |    5    |
       |   Paris    |    France     |    5    |
 
+
+
+
+
+    
