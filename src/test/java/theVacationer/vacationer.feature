@@ -38,4 +38,20 @@ Feature: Should be possible to receive various destinations per country/city
       |   Rome     |    Italy      |    5    |
       |   Milan    |    Italy      |    5    |
 
+   Scenario: Determine the validity of returned hotels
+     Given A specific location of Paris, France
+     When I chose to locate available hotels
+     Then there are 5 valid hotels
+
+  Scenario Outline: Determine whether each city of a given country returns 5 hotels
+    Given a city "<city-chose>" in "<country-chose>"
+    When  I chose to locate hotel information
+    Then  the system should return the top "<res-num>" hotels
+    Examples:
+
+      | city-chose | country-chose | res-num |
+      |   Munich   |    Germany    |    5    |
+      |   Rome     |    Italy      |    5    |
+      |   Milan    |    Italy      |    5    |
+      |   Paris    |    France     |    5    |
 
