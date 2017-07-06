@@ -2,14 +2,10 @@
 package theVacationer.model;
 
 import javax.annotation.Generated;
-import javax.jws.WebParam;
 
 import com.google.gson.annotations.SerializedName;
-import org.springframework.web.client.RestTemplate;
-import theVacationer.model.ApiConnector;
-import theVacationer.model.Model;
-import theVacationer.model.retaurants.Response;
-import theVacationer.model.retaurants.RestaurantsData;
+import theVacationer.model.restaurants.Response;
+import theVacationer.model.restaurants.RestaurantsData;
 
 import java.sql.ResultSet;
 

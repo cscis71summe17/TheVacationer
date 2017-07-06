@@ -108,8 +108,6 @@ public class RequestController {
         Connection con = null;
         RestTemplate response = new RestTemplate();
 
-
-
         String baseUrl = "https://api.foursquare.com/v2/venues/search";
         ApiConnector api = new ApiConnector(baseUrl);
         Map<String,String> paramMap = new TreeMap<String, String>();
