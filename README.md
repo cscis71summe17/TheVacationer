@@ -325,7 +325,7 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 **Kanban URL**: https://trello.com/b/xn8Hnj4p/the-vacationer-project
 
 
-**Daily Scrum**: Conducted on 5-Jul-2017 at 3:00 PM.
+**Daily Scrum**: Conducted on 4-Jul-2017 at 3:00 PM.
 
 * Scrum master initiated the daily scrum meeting. This meeting started at 3:00 PM and completed at 3:15 PM.
 
@@ -335,10 +335,7 @@ In this Sprint, we could deliver 6 points i.e., names & websites of the restaura
 
 **Impediments**
 
-For Sprint 3, one of developer's birthday falls on July 4th and the festivites of independece day, which will cause some distractions for our team. We will work in the morning and than later celebrate our team members birthday and watch the fireworks to ensure our team is in high moral. This small break will allow us to be more productive for the duration of the sprint. 
-
-
-
+For Sprint 3, one of developer's birthday falls on July 4th and the festivites of independece day, which will cause some distractions for our team. We will work till late in the afternoon and than later celebrate our team members birthday and watch the fireworks to ensure our team is in high moral. This small break will allow us to be more productive for the duration of the sprint. 
 
 
 **Alex:** 
