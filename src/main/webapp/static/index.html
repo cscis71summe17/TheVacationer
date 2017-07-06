@@ -42,6 +42,10 @@
         {"id":"5","name":"Hasir Hotel","url":"http://www.hasir.de/","address":"Meow"}
     ];
 
+    var gratuities = [
+        {"id":1,"rate":5}
+        ];
+
     webix.ui({
         rows: [
             {
@@ -104,6 +108,7 @@
                     {
                         cols: [
 
+                            {width: 20},
                             {
                                 rows: [
 
@@ -128,7 +133,7 @@
                                     ,
                                     {
                                         view: "list",
-                                        width: 250,
+                                        width: 200,
                                         id: "safetyinfoid",
                                         height: 200,
                                         template: "#description#: #number#",
@@ -169,6 +174,24 @@
                                         template: "#name#",
                                         select: true,
                                         data: hotels
+                                    }
+                                ]
+                            },
+                            {width: 30},
+                            {
+                                rows: [
+
+                                    {template: "Gratuities", type: "header"}
+                                    ,
+                                    {
+                                        view: "list",
+                                        width: 150,
+                                        id: "gratuitiesid",
+                                        height: 200,
+                                        template: "#rate#%",
+                                        select: true,
+
+                                        data: gratuities
                                     }
                                 ]
                             }
@@ -238,6 +261,12 @@
                 $$('safetyinfoid').define('data', safetyInfo);
                 $$('safetyinfoid').refresh();
             });
+            webix.ajax("../gratuities?country="+country, function (text) {
+                var parsed = JSON.parse(text);
+                gratuities = parsed;
+                $$('gratuitiesid').define('data', gratuities);
+                $$('gratuitiesid').refresh();
+            });
         }
     });
 
@@ -285,7 +314,7 @@
         var adr = restaurants[id - 1].address.toString();
         var email = restaurants[id - 1].url.toString();
         description = "Address: " + adr;
-        if(email != null){
+        if(email !== ""){
             description+= "<br>" + "<a href=\"" + email +
                 "\">" + email + "</a>";
         }
@@ -303,7 +332,7 @@
         var adr = hotels[id - 1].address.toString();
         var email = hotels[id - 1].url.toString();
         description = "Address: " + adr;
-        if(email != null){
+        if(email !== ""){
             description+= "<br>" + "<a href=\"" + email +
                 "\">" + email + "</a>";
         }

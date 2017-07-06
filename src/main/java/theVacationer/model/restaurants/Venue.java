@@ -68,6 +68,9 @@ public class Venue {
     }
 
     public String getUrl() {
+        if(mUrl == null){
+            mUrl = "";
+        }
         return mUrl;
     }
 
