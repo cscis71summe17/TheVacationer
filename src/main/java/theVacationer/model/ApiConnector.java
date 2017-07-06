@@ -1,8 +1,6 @@
 package theVacationer.model;
 
 import org.springframework.web.client.RestTemplate;
-import theVacationer.model.retaurants.Restaurants;
-import theVacationer.model.retaurants.RestaurantsData;
 
 import java.util.Iterator;
 import java.util.Map;

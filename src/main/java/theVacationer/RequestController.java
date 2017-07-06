@@ -5,7 +5,6 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,18 +12,12 @@ import org.springframework.web.client.RestTemplate;
 import theVacationer.model.ApiConnector;
 import theVacationer.model.Model;
 import theVacationer.model.geodata.*;
-import theVacationer.model.landmarks.Landmark;
 import theVacationer.model.landmarks.Landmarks;
 import theVacationer.model.landmarks.Places;
-import theVacationer.model.retaurants.Response;
-import theVacationer.model.retaurants.Restaurants;
+import theVacationer.model.FourSquareApiResponse;
 import theVacationer.model.retaurants.Venue;
 import theVacationer.model.safetyInfo.SafetyInfo;
 import theVacationer.model.safetyInfo.SafetyNumber;
-
-import javax.jws.WebParam;
-
-import static theVacationer.model.Model.*;
 
 @RestController
 public class RequestController {
@@ -103,9 +96,9 @@ public class RequestController {
         paramMap.put("near", city+","+country);
         api.setParams(paramMap);
         
-        Restaurants restaurants = new Restaurants(country, city, api);
-        restaurants.queryApi();
-        return restaurants.getResponse().getVenues();
+        FourSquareApiResponse fourSquareApiResponse = new FourSquareApiResponse(country, city, api);
+        fourSquareApiResponse.queryApi();
+        return fourSquareApiResponse.getResponse().getVenues();
     }
 
     @RequestMapping("/gratuities")

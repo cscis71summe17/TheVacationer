@@ -1,5 +1,5 @@
 
-package theVacationer.model.retaurants;
+package theVacationer.model;
 
 import javax.annotation.Generated;
 import javax.jws.WebParam;
@@ -8,12 +8,14 @@ import com.google.gson.annotations.SerializedName;
 import org.springframework.web.client.RestTemplate;
 import theVacationer.model.ApiConnector;
 import theVacationer.model.Model;
+import theVacationer.model.retaurants.Response;
+import theVacationer.model.retaurants.RestaurantsData;
 
 import java.sql.ResultSet;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class Restaurants extends Model {
+public class FourSquareApiResponse extends Model {
 
     @SerializedName("response")
     private Response mResponse;
@@ -23,16 +25,16 @@ public class Restaurants extends Model {
     public static final String API_CALL =
       "https://api.foursquare.com/v2/venues/search?query=restaurant&limit=5&v=20170701&client_id=ZWDQ4TMCCPQD4EGPFXUU0B1S0A1ESD5ATWDAGSIQQ0MHIYQ5&client_secret=VTCW04XIPQYL3MWMNSLX3ZIIFGZXIY5IGOXGK35PJGXON1M1&near=";
 
-    public Restaurants() {
+    public FourSquareApiResponse() {
 
     }
 
-    public Restaurants(String country,String city) {
+    public FourSquareApiResponse(String country, String city) {
         this.country = country;
         this.city = city;
     }
 
-    public Restaurants(String country, String city, ApiConnector api) {
+    public FourSquareApiResponse(String country, String city, ApiConnector api) {
         apiConnector = api;
         this.country = country;
         this.city = city;

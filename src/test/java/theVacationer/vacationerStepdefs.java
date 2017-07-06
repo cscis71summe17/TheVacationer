@@ -1,7 +1,6 @@
 package theVacationer;
 
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -10,10 +9,9 @@ import theVacationer.model.Header;
 import theVacationer.model.Model;
 import theVacationer.model.landmarks.Landmark;
 import theVacationer.model.landmarks.Places;
-import theVacationer.model.retaurants.Restaurants;
+import theVacationer.model.FourSquareApiResponse;
 import theVacationer.model.retaurants.Venue;
 
-import java.util.Arrays;
 import java.util.Iterator;
 
 import static org.junit.Assert.assertEquals;
@@ -39,20 +37,20 @@ public class vacationerStepdefs {
   String country;
   String city;
   Places pl;
-  Restaurants resto;
+  FourSquareApiResponse resto;
 
   @Given("^A specific location of Paris, France$")
   public void aSpecificLocationOfParisFrance() throws Throwable {
     String country = "France";
     String city = "Paris";
-    resto = new Restaurants(country,city);
+    resto = new FourSquareApiResponse(country,city);
   }
 
   @When("^I chose to locate available restaurants$")
   public void iChoseToLocateAvailableRestaurants() throws Throwable {
     RestTemplate response = new RestTemplate();
     resto = response.getForObject(
-      Restaurants.API_CALL+resto.city+","+resto.country,Restaurants.class);
+      FourSquareApiResponse.API_CALL+resto.city+","+resto.country,FourSquareApiResponse.class);
   }
 
   @Then("^there are (\\d+) valid restaurants$")
@@ -75,10 +73,10 @@ public class vacationerStepdefs {
 
   @When("^I chose to locate restaurant information$")
   public void iChoseToLocateRestaurantInformation() throws Throwable {
-    resto = new Restaurants(country,city);
+    resto = new FourSquareApiResponse(country,city);
     RestTemplate response = new RestTemplate();
     resto = response.getForObject(
-      Restaurants.API_CALL+resto.city+","+resto.country,Restaurants.class);
+      FourSquareApiResponse.API_CALL+resto.city+","+resto.country,FourSquareApiResponse.class);
   }
 
   @Then("^the system should return the top \"([^\"]*)\" restaurants$")
