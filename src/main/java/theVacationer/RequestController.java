@@ -15,13 +15,15 @@ import theVacationer.model.geodata.*;
 import theVacationer.model.landmarks.Landmarks;
 import theVacationer.model.landmarks.Places;
 import theVacationer.model.FourSquareApiResponse;
-import theVacationer.model.retaurants.Venue;
+import theVacationer.model.restaurants.Venue;
 import theVacationer.model.safetyInfo.SafetyInfo;
 import theVacationer.model.safetyInfo.SafetyNumber;
 
 @RestController
 public class RequestController {
 
+    public static final String CLIENT_ID = "ZWDQ4TMCCPQD4EGPFXUU0B1S0A1ESD5ATWDAGSIQQ0MHIYQ5";
+    public static final String CLIENT_SECRET = "VTCW04XIPQYL3MWMNSLX3ZIIFGZXIY5IGOXGK35PJGXON1M1";
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/geodata")
@@ -91,8 +93,8 @@ public class RequestController {
         paramMap.put("query", "restaurant");
         paramMap.put("limit", "5");
         paramMap.put("v", "20170701");
-        paramMap.put("client_id", "ZWDQ4TMCCPQD4EGPFXUU0B1S0A1ESD5ATWDAGSIQQ0MHIYQ5");
-        paramMap.put("client_secret", "VTCW04XIPQYL3MWMNSLX3ZIIFGZXIY5IGOXGK35PJGXON1M1");
+        paramMap.put("client_id", CLIENT_ID);
+        paramMap.put("client_secret", CLIENT_SECRET);
         paramMap.put("near", city+","+country);
         api.setParams(paramMap);
         
@@ -100,7 +102,29 @@ public class RequestController {
         fourSquareApiResponse.queryApi();
         return fourSquareApiResponse.getResponse().getVenues();
     }
+    @RequestMapping("/hotels")
+    public List<Venue> getHotels(@RequestParam(value="city") String city,
+                                      @RequestParam(value="country")String country) throws Exception {
+        Connection con = null;
+        RestTemplate response = new RestTemplate();
 
+
+
+        String baseUrl = "https://api.foursquare.com/v2/venues/search";
+        ApiConnector api = new ApiConnector(baseUrl);
+        Map<String,String> paramMap = new TreeMap<String, String>();
+        paramMap.put("query", "hotel");
+        paramMap.put("limit", "5");
+        paramMap.put("v", "20170701");
+        paramMap.put("client_id", CLIENT_ID);
+        paramMap.put("client_secret", CLIENT_SECRET);
+        paramMap.put("near", city+","+country);
+        api.setParams(paramMap);
+
+        FourSquareApiResponse fourSquareApiResponse = new FourSquareApiResponse(country, city, api);
+        fourSquareApiResponse.queryApi();
+        return fourSquareApiResponse.getResponse().getVenues();
+    }
     @RequestMapping("/gratuities")
     public List<Integer> getGratuities(@RequestParam(value="country")String country) throws Exception {
         return new ArrayList<>();
