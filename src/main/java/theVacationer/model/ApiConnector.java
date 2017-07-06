@@ -37,7 +37,6 @@ public class ApiConnector {
                     builder.append(PARAM_CONNECTOR);
                 }
                 Map.Entry pair = (Map.Entry)it.next();
-                System.out.println(pair.getKey() + " = " + pair.getValue());
                 builder.append(pair.getKey());
                 builder.append(STR);
                 builder.append(pair.getValue());
