@@ -396,22 +396,28 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 
 
 
-Our Sprint Review went well with our Stakeholder, Marika. She is again happy to see the progress of our product. After our presentation, she was impressed to see the new features regarding restaurants and hotel information. Marika would like to add additional features to the website, so that it would display local tourist information. She also wanted to rearrange our product backlog, so nearby hotspots, pictures of famous landmarks, information on mode on transportation to the famous landmarks, opening hours of the famous landmarks, Admission fee to landmarks, and finally maps that would show the region of interest. 
+Our Sprint Review went well with our Stakeholder, Marika. 
+Our development team has demonstrated the product increment. Every backlog item that was completed was demonstrated. We use our Kanban Board to enable our stake holder Marika to follow along.
+
+She was again happy to see the progress of our product. After our presentation, she was impressed to see the new features regarding restaurants and hotel information. 
+
+Product Owner thanked Marika for attending the sprint review. He explained the purpose of the sprint review and requested her feedback.
+
+Marika would like to add additional features to the website, so that it would display local tourist information. She also wanted to rearrange our product backlog, so nearby hotspots, pictures of famous landmarks, information on mode of transportation to the famous landmarks, opening hours of the famous landmarks, Admission fee to landmarks, and finally maps that would show the region of interest. 
+
+All the inputs given by Marika are updated in the product backlog.
 
 
 In this Sprint, we could deliver 7 points, the total amount that we estimated for this third Sprint. We were able to add Restaurants Addresses, Names of the hotel as well as their respective addresses, and finally added gratuities 
 	
 
-In the next Sprint, we will on the following features;  
-
-
+In the next Sprint, we will work on the following features;  
 1. Nearby WiFi spots
 2. Pictures of landmarks 
 3. Mode of transportation to the famous landmarks 
 4. Opening hours of the famous landmarks 
 
-
-
+Scrum master was keeping track of time and provided his inputs where required.
 
 **Rehersal Sprint Review with our Stakeholder**
 
@@ -424,3 +430,12 @@ In the next Sprint, we will on the following features;
 
 
 ![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/Sprint3Stakeholder4.jpeg)
+
+
+We have developed a power point presentation to show our product far & near vision, stake holder details, user personas, product features and future plans. The slide deck can be accessed using the below url
+
+https://github.com/cscis71summe17/TheVacationer/blob/master/The%20Vacationer.pptx
+
+
+
+ 
