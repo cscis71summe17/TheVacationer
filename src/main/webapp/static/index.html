@@ -284,10 +284,11 @@
         var description;
         var adr = restaurants[id - 1].address.toString();
         var email = restaurants[id - 1].url.toString();
-        description = "Address: " + adr +
-                "<br>" + "<a href=\"" + email +
+        description = "Address: " + adr;
+        if(email != null){
+            description+= "<br>" + "<a href=\"" + email +
                 "\">" + email + "</a>";
-
+        }
         webix.modalbox({
             title: restaurants[id - 1].name.toString(),
             buttons: ["Ok"],
@@ -301,10 +302,11 @@
         var description;
         var adr = hotels[id - 1].address.toString();
         var email = hotels[id - 1].url.toString();
-        description = "Address: " + adr +
-            "<br>" + "<a href=\"" + email +
-            "\">" + email + "</a>";
-
+        description = "Address: " + adr;
+        if(email != null){
+            description+= "<br>" + "<a href=\"" + email +
+                "\">" + email + "</a>";
+        }
 
         webix.modalbox({
             title: hotels[id - 1].name.toString(),
