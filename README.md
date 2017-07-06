@@ -421,7 +421,7 @@ Marika would like to add additional features to the website, so that it would di
 All the inputs given by Marika are updated in the product backlog.
 
 
-In this Sprint, we could deliver 7 points, the total amount that we estimated for this third Sprint. We were able to add Restaurants Addresses, Names of the hotel as well as their respective addresses, and finally added gratuities 
+In this Sprint, we can deliver 7 points, the total amount that we estimated for this third Sprint. We were able to add Restaurants Addresses, Names of the hotel as well as their respective addresses, and finally added gratuities 
 	
 
 In the next Sprint, we will work on the following features;  
