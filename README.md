@@ -392,6 +392,19 @@ For Sprint 3, one of developer's birthday falls on July 4th and the festivites o
 
 
 
+
+**CI and CD Screen Shots**
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/CI%20and%20CD1.png)
+
+
+![](https://raw.githubusercontent.com/cscis71summe17/TheVacationer/master/Sprint3/CI%20and%20CD2.png)
+
+
+
+
+
+
 **Sprint Review with Stakeholder Rehearsal**
 
 
