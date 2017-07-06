@@ -7,10 +7,12 @@ public class SafetyNumber {
     int id;
     String number;
     String description;
+    int tip;
 
-    public SafetyNumber(String number, String description, int id) {
+    public SafetyNumber(String number, String description, String tip, int id) {
         this.number = number;
         this.description = description;
+        this.tip = Integer.parseInt(tip);
         this.id = id;
     }
 

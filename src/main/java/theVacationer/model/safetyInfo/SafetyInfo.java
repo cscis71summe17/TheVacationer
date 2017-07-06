@@ -23,7 +23,7 @@ public class SafetyInfo extends Model {
             ResultSet results = query(country);
             int currentId = 1;
             while (results.next()) {
-                SafetyNumber info = new SafetyNumber(results.getString(1),results.getString(2), currentId);
+                SafetyNumber info = new SafetyNumber(results.getString(1),results.getString(2), results.getString(3),currentId);
                 numbers.add(info);
                 currentId++;
             }
@@ -42,8 +42,8 @@ public class SafetyInfo extends Model {
     public ResultSet query(String country) throws Exception {
         String str =
                 "SELECT A.number, A.description " +
-                        "FROM  " + SAFETYINFO_TABLE + " AS A, " + COUNTRY_TABLE + " AS B " +
-                        "WHERE A.country_id = B.id AND B.name LIKE '" + country + "';";
+                        "FROM  " + SAFETYINFO_TABLE + " AS A, " + COUNTRY_TABLE + " AS B, " + GRATUITIES_TABLE +" AS C, " +
+                        "WHERE C.country_id = A.country_id AND A.country_id = B.id AND B.name LIKE '" + country + "';";
         return statement.executeQuery(str);
     }
 
